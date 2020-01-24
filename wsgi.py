@@ -1,10 +1,12 @@
 from flask import Flask
 application = Flask(__name__)
 import time
+import sys
 
 @application.route("/")
 def hello():
-    return "Hello World! 2", time.time()
+    return sys.version
+    #return "Hello World! 2", time.time()
 
 @application.route("/time")
 def time():
