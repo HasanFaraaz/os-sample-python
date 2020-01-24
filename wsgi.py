@@ -7,7 +7,7 @@ def hello():
     return "Hello World! 2"
 
 @application.route("/time")
-def hello():
+def time():
     return time.time()
 
 if __name__ == "__main__":
