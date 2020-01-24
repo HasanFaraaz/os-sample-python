@@ -5,7 +5,8 @@ import sys
 
 @application.route("/")
 def hello():
-    return sys.version
+    return "<-->".join(sys.version, str(time.time()))
+
     #return "Hello World! 2", time.time()
 
 @application.route("/time")
