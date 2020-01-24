@@ -4,7 +4,7 @@ import time
 
 @application.route("/")
 def hello():
-    return "Hello World! 2"
+    return "Hello World! 2", time.time()
 
 @application.route("/time")
 def time():
