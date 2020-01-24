@@ -1,11 +1,15 @@
 from flask import Flask
 application = Flask(__name__)
-import time
+
 import sys
+import datetime;
+
 
 @application.route("/")
 def hello():
-    return (time.now())
+    ts = datetime.datetime.now().timestamp()
+    return(ts)
+    
     #return "<-->".join(sys.version, "hello")
 
     #return "Hello World! 2", time.time()
